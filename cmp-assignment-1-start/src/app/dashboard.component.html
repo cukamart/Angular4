@@ -1,0 +1,11 @@
+<p>My first A4 component</p>
+<!-- <p>{{ loadState }}</p> -->
+<p [textContent]="loadState"></p>
+<div>
+    <!-- keby chcem nieco poslat do metody tak cez $event -->
+     <button (click)="onSwitchState()">Switch State</button>
+</div>
+<div>
+  <!-- <input type="text" (input)="loadState = $event.target.value"> -->
+  <input type="text" [(ngModel)]="loadState">
+</div>
